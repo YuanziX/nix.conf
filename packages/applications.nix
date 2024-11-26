@@ -4,6 +4,7 @@
     firefox
 
     # chat apps
+    telegram-desktop
     vesktop
 
     # code editors
