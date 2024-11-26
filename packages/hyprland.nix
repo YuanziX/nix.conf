@@ -18,5 +18,11 @@
     
     # volume, brightness modifier / display
     swayosd
+
+    # notifications
+    swaynotificationcenter
+
+    # wallpapers
+    hyprpaper
   ];
 }
