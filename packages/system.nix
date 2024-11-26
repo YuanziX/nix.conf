@@ -2,8 +2,6 @@
   environment.systemPackages = with pkgs; [
     
     # bluetooth
-    bluez
-    bluez-tools
     blueman
 
     # terminal
