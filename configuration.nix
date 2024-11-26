@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./core
+      ./packages
+      ./programs
       ./hardware-configuration.nix
     ];
 
@@ -17,9 +19,6 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  programs.hyprland.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -56,10 +55,8 @@
     packages = with pkgs; [];
   };
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["Meslo" "JetBrainsMono"];})
-    roboto
-  ];
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
