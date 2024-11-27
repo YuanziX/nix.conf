@@ -13,6 +13,7 @@
 
     # dev tools
     postman
+    nixfmt-rfc-style
 
     # programming languages
     nodejs
@@ -22,5 +23,8 @@
     # music
     spotify
     spicetify-cli
+
+    # cursors (here for some reason, couldn't find a proper place)
+    phinger-cursors
   ];
 }
