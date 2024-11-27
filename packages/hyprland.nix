@@ -24,5 +24,8 @@
 
     # wallpapers
     hyprpaper
+
+    # theme other apps
+    nwg-look
   ];
 }

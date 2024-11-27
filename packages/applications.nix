@@ -17,12 +17,10 @@
     # programming languages
     nodejs
     go
+    gcc
 
     # music
     spotify
     spicetify-cli
-
-    # system stuff
-    killall
   ];
 }
