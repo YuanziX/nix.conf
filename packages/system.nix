@@ -1,5 +1,6 @@
-{ pkgs, ...}: {
-  environment.systemPackages = with pkgs; [  
+{ pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
     # bluetooth manager
     blueman
 
@@ -11,7 +12,7 @@
 
     # manage removable media
     udiskie
-    
+
     # ntfs support
     ntfs3g
   ];

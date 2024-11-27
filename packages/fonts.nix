@@ -1,6 +1,12 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["Meslo" "JetBrainsMono"];})
+    (nerdfonts.override {
+      fonts = [
+        "Meslo"
+        "JetBrainsMono"
+      ];
+    })
     roboto
   ];
 

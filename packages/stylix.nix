@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   stylix.enable = true;
   stylix.base16Scheme = {
     base00 = "#191724";
@@ -23,6 +24,6 @@
     package = pkgs.phinger-cursors;
     name = "phinger-cursors-light";
   };
-  
+
   stylix.polarity = "dark";
 }
