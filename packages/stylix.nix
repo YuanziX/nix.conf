@@ -20,10 +20,5 @@
     base0F = "#524f67";
   };
 
-  stylix.cursor = {
-    package = pkgs.phinger-cursors;
-    name = "phinger-cursors-light";
-  };
-
   stylix.polarity = "dark";
 }
