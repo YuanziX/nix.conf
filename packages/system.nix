@@ -15,5 +15,8 @@
 
     # ntfs support
     ntfs3g
+
+    # dotfiles management
+    stow
   ];
 }
