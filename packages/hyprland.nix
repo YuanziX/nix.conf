@@ -12,7 +12,7 @@
 
     # clipboard
     wl-clipboard
-    cliphist
+    clipse
 
     # file manager
     xfce.thunar
