@@ -15,6 +15,11 @@
     "max-length": 65
   },
 
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1"
+  },
+
   "tray": {
     "icon-size": 18,
     "spacing": 10
@@ -47,7 +52,7 @@
 
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon} {percent}",
+    "format": "{icon} {percent} %",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
     "on-scroll-up": "swayosd-client --brightness +1",
     "on-scroll-down": "swayosd-client --brightness -1"
@@ -67,7 +72,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}",
+    "format": "{icon} {volume} %",
     "tooltip": false,
     "format-muted": "󰝟 ",
     "on-click": "pavucontrol",

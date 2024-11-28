@@ -37,8 +37,8 @@ tooltip {
 }
 
 #workspaces button.active {
-  background: @love;
-  color: @rose;
+  background: @iris;
+  color: @highlightLow;
   margin-left: 3px;
   padding-left: 8px;
   padding-right: 8px;
@@ -70,7 +70,7 @@ tooltip {
   opacity: 0.9;
   padding: 0px 10px;
   margin-top: 2px;
-  border: 1px solid @rose;
+  border: 1px solid @iris;
   padding-top: 4px;
   padding-bottom: 4px;
 }
