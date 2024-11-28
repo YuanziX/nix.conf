@@ -1,7 +1,8 @@
 {
   imports = [
     ./bluetooth.nix
-    ./shell.nix
     ./git.nix
+    ./nh.nix
+    ./shell.nix
   ];
 }
