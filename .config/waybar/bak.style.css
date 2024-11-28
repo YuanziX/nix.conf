@@ -1,0 +1,164 @@
+@import "./rose-pine.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono NFM ExtraBold";
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: @text;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @overlay;
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 0px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 0px;
+  color: @rose;
+  animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+  background: @love;
+  color: @rose;
+  margin-left: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 3px;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  background: @rose;
+  color: @love;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#custom-power_profile,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#memory,
+#backlight {
+  background: @base;
+  opacity: 0.9;
+  padding: 0px 10px;
+  margin: 0px 0px;
+  margin-top: 10px;
+  border: 1px solid @rose;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#memory {
+  color: @rose;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#temperature {
+  color: @gold;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#temperature.critical {
+  border-left: 0px;
+  border-right: 0px;
+  color: @love;
+}
+
+#backlight {
+  color: @gold;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 12px;
+}
+
+#tray {
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+#workspaces {
+  background: @base;
+  border-radius: 8px;
+  margin-left: 8px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#custom-power_profile {
+  color: @foam;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#window {
+  border-radius: 8px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+window#waybar.empty {
+  background-color: transparent;
+}
+
+window#waybar.empty #window {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  /*  background-color: rgba(66,66,66,0.5); */
+  /* transparent */
+  background-color: transparent;
+}
+
+#clock {
+  color: @rose;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+
+#network {
+  color: @love;
+  border-radius: 8px 0px 0px 8px;
+  border-right: 0px;
+}
+
+#pulseaudio {
+  color: @iris;
+  border-radius: 8px 0px 0px 8px;
+  border-right: 0px;
+}
+
+#battery {
+  color: @foam;
+  border-radius: 0 8px 8px 0;
+  margin-right: 10px;
+  border-left: 0px;
+}
