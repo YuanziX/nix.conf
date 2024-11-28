@@ -1,0 +1,13 @@
+/**
+ * inspired from the rose pine color palette
+ **/
+
+* {
+    background:     #19172480;
+    /** background-alt: #26233a80; **/
+    background-alt: #19172480;
+    foreground:     #e0def4;
+    selected:       #ebbcba;
+    active:         #ebbcba;
+    urgent:         #eb6f92;
+}
