@@ -14,6 +14,9 @@
     wl-clipboard
     cliphist
 
+    # file manager
+    xfce.thunar
+
     # screenshot
     grimblast
 

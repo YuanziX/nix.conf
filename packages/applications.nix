@@ -11,7 +11,7 @@
     vesktop
 
     # code editors
-    vscode
+    vscode.fhs
     neovim
 
     # dev tools
@@ -22,6 +22,7 @@
     nodejs
     go
     gcc
+    openjdk
 
     # music
     spotify
