@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   services.hardware.openrgb.enable = true;
+  services.udisks2.enable = true;
 
   environment.systemPackages = with pkgs; [
     # everyday stuff
@@ -30,5 +31,8 @@
 
     # cursors (here for some reason, couldn't find a proper place)
     phinger-cursors
+
+    # misc
+    fastfetch
   ];
 }
