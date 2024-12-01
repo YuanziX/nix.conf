@@ -59,18 +59,20 @@ tooltip {
 #clock,
 #battery,
 #pulseaudio,
+#pulseaudio.microphone,
 #network,
 #bluetooth,
 #temperature,
 #workspaces,
 #tray,
 #memory,
+#custom-lock,
 #backlight {
   background: @base;
   opacity: 0.9;
   padding: 0px 10px;
   margin-top: 2px;
-  border: 1px solid @iris;
+  border: 1.5px solid @iris;
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -94,8 +96,8 @@ tooltip {
 
 #backlight {
   color: @gold;
-  border-radius: 0px 8px 8px 0px;
-  margin-right: 12px;
+  border-radius: 8px 8px 8px 8px;
+  margin-right: 8px;
 }
 
 #tray {
@@ -110,12 +112,6 @@ tooltip {
   margin-left: 8px;
   padding-right: 5px;
   padding-left: 5px;
-}
-
-#custom-power_profile {
-  color: @foam;
-  border-left: 0px;
-  border-right: 0px;
 }
 
 #window {
@@ -155,9 +151,27 @@ window#waybar.empty #window {
   border-right: 0px;
 }
 
+#pulseaudio.microphone {
+  color: @foam;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 8px;
+}
+
 #battery {
   color: @foam;
   border-radius: 0 8px 8px 0;
-  margin-right: 10px;
+  margin-right: 8px;
   border-left: 0px;
+}
+
+#custom-lock {
+  color: @rose;
+  border-radius: 8px 8px 8px 8px;
+  margin-right: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#custom-lock:hover {
+  color: @love;
 }

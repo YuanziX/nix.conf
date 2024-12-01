@@ -9,7 +9,14 @@
   // "spacing": 4,
   "modules-left": ["clock", "tray", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["memory", "battery", "pulseaudio", "backlight"],
+  "modules-right": [
+    "memory",
+    "battery",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "backlight",
+    "custom/lock"
+  ],
   "hyprland/window": {
     "format": "{}",
     "max-length": 65
@@ -75,7 +82,7 @@
     "format": "{icon} {volume} %",
     "tooltip": false,
     "format-muted": "󰝟 ",
-    "on-click": "pavucontrol",
+    "on-click": "GSK_RENDERER=ngl pavucontrol",
     "on-scroll-up": "swayosd-client --output-volume +1",
     "on-scroll-down": "swayosd-client --output-volume -1",
     "format-icons": {
@@ -90,12 +97,13 @@
   },
 
   "pulseaudio#microphone": {
+    "class": "microphone-widget",
     "format": "{format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": " Muted",
-    "on-click": "pavucontrol",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "GSK_RENDERER=ngl pavucontrol",
     "on-scroll-up": "swayosd-client --input-volume +1",
-    "on-scroll-down": "swayosd-client --input-volume +1"
+    "on-scroll-down": "swayosd-client --input-volume -1"
   },
 
   "memory": {
@@ -114,5 +122,11 @@
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
+  },
+
+  "custom/lock": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "wlogout -b 2"
   }
 }
