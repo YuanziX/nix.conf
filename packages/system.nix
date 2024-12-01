@@ -18,5 +18,10 @@
 
     # dotfiles management
     stow
+
+    pavucontrol
+    playerctl
+
+    p7zip
   ];
 }

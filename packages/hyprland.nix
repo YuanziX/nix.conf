@@ -31,5 +31,7 @@
 
     # theme other apps
     nwg-look
+
+    wlogout
   ];
 }
