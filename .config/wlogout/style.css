@@ -1,0 +1,64 @@
+@import "../waybar/rose-pine.css";
+
+window {
+  background-color: transparent;
+}
+
+button {
+  border-color: @surface;
+  text-decoration-color: @text;
+  color: @text;
+  background-color: @base;
+  border-style: solid;
+  border-width: 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16%;
+  animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus,
+button:active {
+  background-color: @pine;
+  outline-style: none;
+}
+
+button:hover {
+  background-color: @love;
+  outline-style: none;
+  border-radius: 16px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+}
+
+button#lock {
+  border-radius: 24px 0 0 0;
+}
+
+button#shutdown {
+  border-radius: 0 24px 0 0;
+}
+
+button#reboot {
+  border-radius: 0 0 24px 0;
+}
+
+button#logout {
+  border-radius: 0 0 0 24px;
+}
+
+#lock {
+  background-image: url("icons/lock_white.png");
+}
+
+#shutdown {
+  background-image: url("icons/shutdown_white.png");
+}
+
+#reboot {
+  background-image: url("icons/reboot_white.png");
+}
+
+#logout {
+  background-image: url("icons/logout_white.png");
+}
