@@ -103,6 +103,8 @@ tooltip {
 #tray {
   border-radius: 0px 8px 8px 0px;
   border-left: 0px;
+  margin-left: -10px;
+  background: linear-gradient(to right, transparent 10px, @base 8px);
 }
 
 #workspaces {
