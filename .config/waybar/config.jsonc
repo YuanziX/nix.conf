@@ -7,14 +7,24 @@
   "gtk-layer-shell": true,
   "height": 32,
   // "spacing": 4,
-  "modules-left": ["clock", "tray", "hyprland/workspaces"],
+  "modules-left": [
+    "clock",
+    "custom/pad",
+    "custom/notification",
+    "tray",
+    "custom/pad",
+    "hyprland/workspaces"
+  ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "memory",
     "battery",
+    "custom/pad",
     "pulseaudio",
     "pulseaudio#microphone",
+    "custom/pad",
     "backlight",
+    "custom/pad",
     "custom/lock"
   ],
   "hyprland/window": {
@@ -128,5 +138,32 @@
     "format": "  ",
     "tooltip": false,
     "on-click": "wlogout -b 2"
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{} {icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "",
+      "dnd-notification": " ",
+      "dnd-none": "󰂛",
+      "inhibited-notification": " ",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": " ",
+      "dnd-inhibited-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
+  },
+
+  "custom/pad": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
   }
 }
