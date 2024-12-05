@@ -114,9 +114,9 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     5px 5px;
     expand:                      false;
-    str:                         "";
+    str:                         "";
     background-color:            inherit;
     text-color:                  inherit;
 }
@@ -126,7 +126,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "Search...";
+    placeholder:                 "Search";
     placeholder-color:           inherit;
 }
 num-filtered-rows {
