@@ -9,6 +9,7 @@
 
     # terminal
     kitty
+    nushell
 
     # manage removable media
     udiskie

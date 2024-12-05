@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     # everyday stuff
     firefox
+    onlyoffice-bin
 
     # chat apps
     telegram-desktop
@@ -24,6 +25,7 @@
     go
     gcc
     openjdk
+    rustup
 
     # music
     spotify
@@ -34,5 +36,6 @@
 
     # misc
     fastfetch
+    ark
   ];
 }
