@@ -26,8 +26,11 @@
     # notifications
     swaynotificationcenter
 
-    # wallpapers
-    hyprpaper
+    # hypr ecosystem
+    hyprpaper # wallpaper
+    hypridle
+    hyprlock
+    hyprsunset
 
     # theme other apps
     nwg-look
