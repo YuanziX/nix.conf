@@ -7,6 +7,7 @@
 {
   imports = [
     # Include the results of the hardware scan.
+    ./cachix.nix
     ./core
     ./packages
     ./programs
