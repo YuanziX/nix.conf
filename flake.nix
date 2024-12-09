@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
+    walker.url = "github:abenz1267/walker";
   };
 
   outputs =
