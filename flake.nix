@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    stylix.url = "github:danth/stylix";
     walker.url = "github:abenz1267/walker";
   };
 
@@ -16,9 +15,9 @@
       nixosConfigurations = {
         hyprland = lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
           modules = [
             ./configuration.nix
-            inputs.stylix.nixosModules.stylix
           ];
         };
       };
