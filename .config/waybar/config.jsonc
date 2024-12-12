@@ -92,7 +92,7 @@
     "format": "{icon} {volume} %",
     "tooltip": false,
     "format-muted": "󰝟 ",
-    "on-click": "GSK_RENDERER=ngl pavucontrol",
+    "on-click": "pavucontrol",
     "on-scroll-up": "swayosd-client --output-volume +1",
     "on-scroll-down": "swayosd-client --output-volume -1",
     "format-icons": {
@@ -111,7 +111,7 @@
     "format": "{format_source}",
     "format-source": " {volume}%",
     "format-source-muted": " Muted",
-    "on-click": "GSK_RENDERER=ngl pavucontrol",
+    "on-click": "pavucontrol",
     "on-scroll-up": "swayosd-client --input-volume +1",
     "on-scroll-down": "swayosd-client --input-volume -1"
   },

@@ -12,4 +12,3 @@ abbr ..... cd ../../../..
 abbr ..... cd ../../../../..
 
 # git abbrs
-abbr cp git cherry-pick
