@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    walker.url = "github:abenz1267/walker";
   };
 
   outputs =

@@ -9,7 +9,6 @@
 
     # app launcher
     rofi-wayland
-    inputs.walker.packages.${system}.default
 
     # clipboard
     wl-clipboard

@@ -26,6 +26,7 @@
     gcc
     openjdk
     rustup
+    python3
 
     # music
     spotify
