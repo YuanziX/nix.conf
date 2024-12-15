@@ -19,6 +19,7 @@
     # dev tools
     postman
     nixfmt-rfc-style
+    mongodb-compass
 
     # programming languages
     nodejs
