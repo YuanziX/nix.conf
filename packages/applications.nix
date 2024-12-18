@@ -1,12 +1,12 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   services.hardware.openrgb.enable = true;
   services.udisks2.enable = true;
 
   environment.systemPackages = with pkgs; [
     # everyday stuff
-    firefox
     onlyoffice-bin
+    inputs.zen-browser.packages."${system}".default
 
     # chat apps
     telegram-desktop
